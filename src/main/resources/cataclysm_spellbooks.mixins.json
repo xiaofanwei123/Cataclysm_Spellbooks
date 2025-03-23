@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.acetheeldritchking.cataclysm_spellbooks.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cataclysm_spellbooks.refmap.json",
+  "mixins": [
+    "Ignis_Fireball_Mixin_Entity",
+    "Tidal_Tentacle_Mixin_Entity"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
