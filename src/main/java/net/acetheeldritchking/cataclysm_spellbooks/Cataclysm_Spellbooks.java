@@ -7,6 +7,7 @@ import net.acetheeldritchking.cataclysm_spellbooks.entity.render.mobs.SummonedAb
 import net.acetheeldritchking.cataclysm_spellbooks.entity.render.spells.HellishBladeRenderer;
 import net.acetheeldritchking.cataclysm_spellbooks.entity.render.spells.InfernalBladeRenderer;
 
+import net.acetheeldritchking.cataclysm_spellbooks.event.ServerEvents;
 import net.acetheeldritchking.cataclysm_spellbooks.loot.CSLootModifiers;
 import net.acetheeldritchking.cataclysm_spellbooks.registries.*;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -39,7 +40,7 @@ public class Cataclysm_Spellbooks
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Event Handlers
-        //MinecraftForge.EVENT_BUS.register(new ServerEvents());
+        MinecraftForge.EVENT_BUS.register(new ServerEvents());
         //CreativeModeTabs
         CSCreativeModeTabs.register(modEventBus);
         // Items
